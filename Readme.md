@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Олег Хлынин](https://up.htmlacademy.ru/htmlcss/28/user/1066217).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol_fw).
 
 ---
 
