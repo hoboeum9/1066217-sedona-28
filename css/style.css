@@ -46,11 +46,15 @@ body {
 
 .icon-facebook::before {
   content: "\66";
-} /* "f" */
+}
+
+/* "f" */
 
 .icon-twitter::before {
   content: "\74";
-} /* "t" */
+}
+
+/* "t" */
 
 .icon-up-dir::before {
   content: "\25b2";
@@ -186,7 +190,6 @@ body {
 }
 
 
-
 .logo {
   padding-top: 215px;
 }
@@ -201,9 +204,16 @@ body {
   line-height: 26px;
 }
 
+.main-intro ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
 .intro-text {
   font-size: 21px;
-
+  margin-top: 0;
   color: #000000;
 }
 
@@ -247,6 +257,7 @@ body {
 
 .index-content-title {
   font-size: 21px;
+  margin: 0;
 }
 
 .features-first {
@@ -376,16 +387,30 @@ body {
 }
 
 @keyframes shake {
-  0%, 100% {transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90%  {transform: translateX(-10px); }
-  20%, 40%, 60%, 80% {transform: translateX(10px); }
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
 }
 
 @keyframes bounce {
-  0% {transform: translateY(0); }
-  50% {transform: translateY(70px); }
-  80% {transform: translateY(-50px); }
-  100% {transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(70px);
+  }
+  80% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .search-filters-show {
@@ -418,6 +443,7 @@ body {
 
   line-height: 38px;
 }
+
 .field-data input {
   width: 100%;
   height: 40px;
@@ -504,7 +530,8 @@ body {
 
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
-  -webkit-appearance: none; margin: 0px;
+  -webkit-appearance: none;
+  margin: 0px;
 }
 
 .field-people {
@@ -532,7 +559,7 @@ input::-webkit-outer-spin-button {
   margin-right: -4px;
 }
 
-.people-number-adults{
+.people-number-adults {
   float: left;
 }
 
@@ -583,7 +610,9 @@ input::-webkit-outer-spin-button {
   margin-top: -120px;
 }
 
-.footer-item{
+
+
+.footer-item {
   display: inline-block;
   width: 300px;
   margin-left: 50px;
@@ -599,6 +628,26 @@ input::-webkit-outer-spin-button {
   line-height: 26px;
   color: rgb(0, 0, 0);
 }
+
+.main-footer .footer-hashtag ul {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.footer-social ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social li:not(:last-child) {
+  padding-right: 6px;
+}
+
+
 
 .social-btn {
   display: inline-block;
@@ -629,11 +678,14 @@ input::-webkit-outer-spin-button {
   background-color: #5496bd;
 }
 
-.footer-hashtag p{
+.footer-hashtag p {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
+
+
+
 
 .footer-copyright span {
   line-height: 39px;
@@ -720,7 +772,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"]+label {
+input[type="checkbox"] + label {
   position: relative;
 
   display: block;
@@ -732,7 +784,7 @@ input[type="checkbox"]+label {
   cursor: pointer;
 }
 
-input[type="checkbox"]+label::before {
+input[type="checkbox"] + label::before {
   content: "\2610";
   position: absolute;
   top: 0;
@@ -745,7 +797,7 @@ input[type="checkbox"]+label::before {
   font-family: "symbols-sedona";
 }
 
-input[type="checkbox"]:checked+label::before {
+input[type="checkbox"]:checked + label::before {
   content: "\2611";
 }
 
@@ -869,7 +921,7 @@ input[type="checkbox"]:checked+label::before {
   margin-bottom: 26px;
 }
 
-.list-filters input[disabled="disabled"]+label {
+.list-filters input[disabled="disabled"] + label {
   color: #6a6a6a;
 }
 
@@ -914,7 +966,7 @@ input[type="checkbox"]:checked+label::before {
 }
 
 .result-filters-name {
-  float:left;
+  float: left;
   margin-top: 7px;
   margin-left: 48px;
   margin-right: 38px;
@@ -1125,7 +1177,7 @@ input[type="checkbox"]:checked+label::before {
 }
 
 
-.main-housing-info  {
+.main-housing-info {
   margin-bottom: 15px;
 }
 
