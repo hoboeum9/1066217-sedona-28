@@ -305,13 +305,10 @@ body {
   padding-bottom: 81px;
   background-color: rgb(255, 255, 255);
   text-align: center;
+  padding-left: 0;
 }
 
-.features-first ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+
 
 .features-item {
   float: left;
