@@ -28,7 +28,7 @@
     </nav>
 
     <p class="main-header-logo">
-      <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="«Седона» - поиск гостиниц в городе Седона"></a>
+      <a><img src="img/logo.png" width="138" height="70" alt="«Седона» - поиск гостиниц в городе Седона"></a>
     </p>
 
   </header>
@@ -37,7 +37,8 @@
   <!--  main-->
   <main class="content-main">
     <div class="main-image">
-        <img src="img/mainlogo.png" width="458" height="352" alt="Sedona">
+
+      <img class="main-image-item-first" src="img/main-bg.jpg" width="1200" height="508" alt="Sedona"> <img class="main-image-item-second" src="img/mainlogo.png" alt="Sedona">
     </div>
     <section class="main-intro">
       <div class="intro">
@@ -59,27 +60,27 @@
           </figure>
 
           <div class="features-first clearfix">
+            <ul>
+              <li class="features-item">
+                <img src="img/index-icon-house.png" width="75" height="72" alt="Дом">
+                <p class="features-name">Жилье</p>
+                <p>Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
+              </li>
 
-            <div class="features-item">
-              <img src="img/index-icon-house.png" width="75" height="72" alt="Дом">
-              <p class="features-name">Жилье</p>
-              <p>Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
-            </div>
+              <li class="features-item">
+                <img src="img/index-icon-food.png" width="74" height="70" alt="Еда">
+                <p class="features-name">
+                  Еда </p>
+                <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+              </li>
 
-            <div class="features-item">
-              <img src="img/index-icon-food.png" width="74" height="70" alt="Еда">
-              <p class="features-name">
-                Еда </p>
-              <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
-            </div>
-
-            <div class="features-item">
-              <img class="picture-souvenirs" src="img/index-icon-souvenirs.png" width="64" height="76" alt="Сувениры">
-              <p class="features-name">
-                Сувениры </p>
-              <p>Не только китайского, но и местного<br> производства!</p>
-            </div>
-
+              <li class="features-item">
+                <img class="picture-souvenirs" src="img/index-icon-souvenirs.png" width="64" height="76" alt="Сувениры">
+                <p class="features-name">
+                  Сувениры </p>
+                <p>Не только китайского, но и местного<br> производства!</p>
+              </li>
+            </ul>
           </div>
         </li>
 
@@ -120,59 +121,66 @@
     <section class="search">
       <div class="intro intro-search">
         <b class="intro-text-search">Заинтересовались?</b>
-        <p>Укажите предполгаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </div>
-      <a class="search-hostel-filters" href="#">Поиск гостиницы в Седоне</a>
+      <button class="search-hostel-filters" type="button">Поиск гостиницы в Седоне</button>
       <!--form-->
       <div class="search-filters">
         <form name="calendar" action="https://echo.htmlacademy.ru" method="get">
 
-          <div class="field-data clearfix">
-            <label for="first-data">Дата заезда:</label>
-            <div class="field-value-data">
+          <p class="field-data clearfix">
+            <label for="first-data">Дата заезда:</label> <span class="field-value-data">
               <button class="button-calendar" type="button">
                 <span class="icon-calendar"></span>
               </button>
               <input type="text" name="first-data" id="first-data" placeholder="Введите дату заезда" tabindex="1">
-            </div>
-          </div>
+            </span>
+          </p>
 
-          <div class="field-data clearfix">
-            <label for="second-data">Дата выезда:</label>
-            <div class="field-value-data">
+          <p class="field-data clearfix">
+            <label for="second-data">Дата выезда:</label> <span class="field-value-data">
               <button class="button-calendar" type="button">
                 <span class="icon-calendar"></span>
               </button>
               <input type="text" name="second-data" id="second-data" placeholder="Введите дату выезда" tabindex="2">
-            </div>
-          </div>
+            </span>
+          </p>
 
-          <div class="field-people cleaffix">
+
+
+          <p class="field-people-adult ">
             <label for="adults">Взрослые:</label>
-            <div class="field-value-people">
-              <div class="people-number people-number-adults">
-                <button class="button-minus button-people-number" type="button">
-                  <span class="icon-minus"></span>
-                </button>
-                <input type="number" name="adults-guests" id="adults" value="2">
-                <button class="button-plus button-people-number" type="button">
-                  <span class="icon-plus"></span>
-                </button>
-              </div>
-              <div class="children-number">
-                <label for="children">Дети:</label>
-                <div class="people-number people-number-children">
-                  <button class="button-minus button-people-number" type="button">
-                    <span class="icon-minus"></span>
-                  </button>
-                  <input type="number" name="children-guests" id="children" value="0">
-                  <button class="button-plus button-people-number" type="button">
-                    <span class="icon-plus"></span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+
+            <span class="people-number people-number-adults">
+
+            <button class="button-minus button-people-number" type="button">
+              &minus;
+            </button>
+            <input type="number" name="adults-guests" id="adults" value="2">
+            <button class="button-plus button-people-number" type="button">
+              +
+            </button>
+
+          </span>
+          </p>
+
+          <p class="field-people-children clearfix">
+            <label for="children">Дети:</label>
+            <span class="people-number people-number-children">
+
+              <button class="button-minus button-people-number" type="button">
+                &minus;
+              </button>
+              <input type="number" name="children-guests" id="children" value="0">
+              <button class="button-plus button-people-number" type="button">
+                +
+              </button>
+
+            </span>
+
+          </p>
+
+
           <div class="search-hotels-button">
             <button class="search-button" type="submit">Найти</button>
           </div>
