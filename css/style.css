@@ -10,7 +10,7 @@ body {
   background-color: #f2f2f2;
 }
 
-body p, input, button  {
+body p, input, button {
   font-family: inherit;
 }
 
@@ -30,9 +30,33 @@ body p, input, button  {
 .container {
   width: 1200px;
   margin: 0 auto;
-
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
+.container-current {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container .main-header {
+  flex-shrink: 0;
+}
+
+
+.container .content-main {
+  flex-grow: 1;
+}
+
+.container .main-footer {
+  flex-shrink: 0;
+}
+
+
+
+
+
+
 
 @font-face {
   font-weight: normal;
@@ -294,7 +318,6 @@ a {
 }
 
 
-
 .clearfix::after {
   content: "";
   display: block;
@@ -316,7 +339,6 @@ a {
 }
 
 
-
 .features-item {
   width: 300px;
   margin-left: 50px;
@@ -331,7 +353,6 @@ a {
 
   color: #000000;
 }
-
 
 
 .features-item p {
@@ -358,7 +379,7 @@ a {
 
 .features-second {
   padding-top: 23px;
-  padding-bottom: 57px;
+  padding-bottom: 42px;
 
   text-align: center;
 
@@ -404,9 +425,15 @@ a {
   margin-top: 28px;
 }
 
+.search .intro-text-search-blog-currect {
+  margin-top: 26px;
+  margin-bottom: 44px;
+}
+
+
 .intro-search-currect {
   padding-bottom: 0;
-  padding-top: 40px;
+  padding-top: 56px;
 }
 
 
@@ -436,8 +463,8 @@ a {
   border: none;
   text-transform: uppercase;
   display: block;
-  padding-top: 34px;
-  padding-bottom: 26px;
+  padding-top: 30px;
+  padding-bottom: 32px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -460,18 +487,13 @@ a {
 .search-filters {
   position: absolute;
   z-index: 10;
-
-  padding-top: 56px;
-  padding-bottom: 55px;
-  padding-left: 57px;
+  padding-top: 52px;
+  padding-bottom: 54px;
+  padding-left: 54px;
   padding-right: 54px;
-
   font-weight: bold;
   line-height: 26px;
-
-  background-color: #ffffff;
-
-
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 10px 40px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -558,9 +580,6 @@ a {
 }
 
 
-
-
-
 .field-data input:hover {
   background-color: #ebebeb;
 }
@@ -637,8 +656,8 @@ input::-webkit-outer-spin-button {
 
 .field-people-adult {
   width: 50%;
+  margin-top: 2px;
 }
-
 
 
 .field-people-adult > label {
@@ -654,7 +673,8 @@ input::-webkit-outer-spin-button {
 .field-people-children {
   width: 180px;
   margin-left: 48px;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
+  margin-top: 3px;
 }
 
 
@@ -662,10 +682,6 @@ input::-webkit-outer-spin-button {
   font-weight: bold;
   color: black;
 }
-
-
-
-
 
 
 .field-value-people {
@@ -690,10 +706,9 @@ input::-webkit-outer-spin-button {
 }
 
 
-
 .people-number-children {
   display: inline-block;
-  margin-left: 25px;
+  margin-left: 24px;
 }
 
 .search-button {
@@ -731,9 +746,8 @@ input::-webkit-outer-spin-button {
 .main-index-footer {
   width: 1200px;
   position: relative;
-  margin-top: -120px;
+  margin-top: -121px;
 }
-
 
 
 .footer-item {
@@ -751,6 +765,7 @@ input::-webkit-outer-spin-button {
   font-weight: 700;
   line-height: 26px;
   color: rgb(0, 0, 0);
+  margin-right: 36px;
 }
 
 .footer-hashtag a {
@@ -772,15 +787,14 @@ input::-webkit-outer-spin-button {
 .footer-social ul {
   display: flex;
   justify-content: center;
-  margin: 0;
   padding: 0;
   list-style: none;
+  margin: 0 auto;
 }
 
-.footer-social li:not(:last-child) {
-  padding-right: 6px;
+.footer-social ul li {
+  margin: 0 3px 0 3px;
 }
-
 
 
 .social-btn {
@@ -891,7 +905,7 @@ input::-webkit-outer-spin-button {
   margin: 0 0 0 266px;
   font-size: 14px;
   font-weight: 400;
-margin-top: -15px;
+  margin-top: -15px;
   color: #ffffff;
   position: relative;
 }
@@ -1088,7 +1102,7 @@ input[type="checkbox"]:checked + label::before {
   border-bottom: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
-justify-content: space-between;
+  justify-content: space-between;
 }
 
 .result-number {
@@ -1267,12 +1281,12 @@ justify-content: space-between;
 .result-item-description-blog {
   margin-top: -7px;
 }
+
 .result-item-description h3 {
   margin: -6px 0 0 0;
 }
 
 .result-item-description
-
 .result-item-price, .result-item-type {
   width: 44%;
   margin: 0
@@ -1334,14 +1348,12 @@ justify-content: space-between;
   width: 110px;
   display: flex;
 }
+
 .main-footer, .result-item-rating {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
-
-
-
 
 
 .result-btn-more {
